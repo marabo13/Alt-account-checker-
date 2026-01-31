@@ -1,17 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Roblox Alt Checker</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Roblox Alt Account Checker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>🕵️ Roblox Alt Account Checker</h1>
+  <main class="wrap">
+    <header class="header">
+      <h1>Roblox Alt Account Checker</h1>
+      <p class="sub">
+        Checks public signals: account age, badges, friends, groups, and activity (presence/last online).
+      </p>
+    </header>
 
-  <input id="username" placeholder="Roblox username">
-  <button onclick="checkAlt()">Check</button>
+    <section class="card">
+      <div class="row">
+        <input id="username" placeholder="Roblox username" autocomplete="off" />
+        <button id="btn">Check</button>
+      </div>
+      <div id="status" class="status"></div>
+      <pre id="output" class="output"></pre>
+    </section>
 
-  <pre id="output"></pre>
+    <footer class="foot">
+      <small>Note: This is an estimate based on public signals — it can’t prove an alt.</small>
+    </footer>
+  </main>
 
   <script src="script.js"></script>
 </body>
