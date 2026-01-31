@@ -1,6 +1,6 @@
 // 1) PUT YOUR CLOUDFLARE WORKER URL HERE
 // It MUST look like: https://your-worker-name.your-subdomain.workers.dev/?url=
-const WORKER_URL = "https://YOURWORKER.YOURNAME.workers.dev/?url=";
+const WORKER_URL = "https://alt-account-checker-1.hugobang23.workers.dev/?url=";
 
 async function proxyFetch(targetUrl, options = {}) {
   // Sends requests through the Cloudflare Worker so GitHub Pages doesn’t get CORS blocked
